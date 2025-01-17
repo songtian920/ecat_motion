@@ -1,0 +1,73 @@
+In file included from [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:18[m[K,
+                 from [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:1[m[K:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/motor_controller.h:51:48:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kvel_out[m[K’ as array of references
+   51 |     int vel_s_curve(float vel_current[],float &[01;31m[Kvel_out[m[K[]);
+      |                                                [01;31m[K^~~~~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:[m[K In constructor ‘[01m[Kzy_motor_controller::zy_motor_controller(int16_t, int16_t, std::string, OptionParam, rclcpp::NodeOptions)[m[K’:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:17:36:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+   17 |         vel_max = (option.vel_max!=[01;35m[KNULL[m[K) ? option.vel_max : vel_max;   //最大速度
+      |                                    [01;35m[K^~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:18:36:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+   18 |         acc_max = (option.acc_max!=[01;35m[KNULL[m[K) ? option.acc_max : acc_max;   //最大加速度 mm/s^2 用线速度表示
+      |                                    [01;35m[K^~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:19:46:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+   19 |         jert_acc_max = (option.jert_acc_max!=[01;35m[KNULL[m[K) ? option.jert_acc_max : jert_acc_max;  //最大加加速或减加速  mm/s^3
+      |                                              [01;35m[K^~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:20:36:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+   20 |         dcc_max = (option.dcc_max!=[01;35m[KNULL[m[K) ? option.dcc_max : dcc_max;   //最大减速度 mm/s^2  用线速度表示
+      |                                    [01;35m[K^~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:21:46:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+   21 |         jert_dcc_max = (option.jert_dcc_max!=[01;35m[KNULL[m[K) ? option.jert_dcc_max : jert_dcc_max;  //最大减减速或加减速 mm/s^3
+      |                                              [01;35m[K^~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:22:56:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+   22 |         followError_speed = (option.followError_speed!=[01;35m[KNULL[m[K) ? option.followError_speed : followError_speed; //跟随误差
+      |                                                        [01;35m[K^~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:23:40:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+   23 |         sync_time = (option.sync_time!=[01;35m[KNULL[m[K) ? option.sync_time : sync_time;                   //同步周期时间 单位 秒s
+      |                                        [01;35m[K^~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:[m[K In member function ‘[01m[Kint zy_motor_controller::sync_control()[m[K’:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:333:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvel_pre[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  333 |                     float [01;35m[Kvel_pre[m[K = 0.0f;  //速度预计算值
+      |                           [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/node_motor_controller.cpp:5[m[K:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/motor_controller.h:51:48:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kvel_out[m[K’ as array of references
+   51 |     int vel_s_curve(float vel_current[],float &[01;31m[Kvel_out[m[K[]);
+      |                                                [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:1[m[K:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/motor_controller.h:51:48:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kvel_out[m[K’ as array of references
+   51 |     int vel_s_curve(float vel_current[],float &[01;31m[Kvel_out[m[K[]);
+      |                                                [01;31m[K^~~~~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:85:5:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint motor_controller::vel_s_curve(float*, float**)[m[K’
+   85 | int [01;31m[Kmotor_controller[m[K::vel_s_curve(float vel_current[],float  *vel_out[])
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:1[m[K:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/motor_controller.h:51:9:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kint motor_controller::vel_s_curve(...)[m[K’
+   51 |     int [01;36m[Kvel_s_curve[m[K(float vel_current[],float &vel_out[]);
+      |         [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/motor_controller.h:21:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass motor_controller[m[K’ defined here
+   21 | class [01;36m[Kmotor_controller[m[K : public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/node_motor_controller.dir/build.make:104: CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:1[m[K:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:[m[K At global scope:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:45:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_run_task[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   45 | static U32 [01;35m[Kg_run_task[m[K = 1;
+      |            [01;35m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/node_motor_controller.dir/build.make:90: CMakeFiles/node_motor_controller.dir/src/zy_motor_controller.cpp.o] Error 1
+In file included from [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/node_motor_controller.cpp:6[m[K:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:171:17:[m[K [01;35m[Kwarning: [m[K‘[01m[K__servos[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  171 | static servos_t [01;35m[K__servos[m[K[NUM_SERVOS] = {0};
+      |                 [01;35m[K^~~~~~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:121:26:[m[K [01;35m[Kwarning: [m[K‘[01m[K__pi_config[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  121 | static pi_offset_config  [01;35m[K__pi_config[m[K[] =
+      |                          [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:45:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_run_task[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   45 | static U32 [01;35m[Kg_run_task[m[K = 1;
+      |            [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:44:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_op_mode[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   44 | static U32 [01;35m[Kg_op_mode[m[K = OP_MODE_CSP;
+      |            [01;35m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/node_motor_controller.dir/build.make:76: CMakeFiles/node_motor_controller.dir/src/node_motor_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/node_motor_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

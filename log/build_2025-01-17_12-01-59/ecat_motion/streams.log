@@ -1,0 +1,81 @@
+[0.012s] Invoking command in '/home/st/ecat_motion_ws/build/ecat_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/st/ecat_motion_ws/build/ecat_motion -- -j12 -l12
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target node_motor_controller[0m
+[0.081s] [ 50%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/node_motor_controller.cpp.o[0m
+[0.081s] [ 50%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o[0m
+[0.081s] [ 75%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/zy_motor_controller.cpp.o[0m
+[2.549s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:[m[K In constructor ‘[01m[Kzy_motor_controller::zy_motor_controller(int16_t, int16_t, std::string, OptionParam, rclcpp::NodeOptions)[m[K’:
+[2.549s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:17:36:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[2.549s]    17 |         vel_max = (option.vel_max!=[01;35m[KNULL[m[K) ? option.vel_max : vel_max;   //最大速度
+[2.549s]       |                                    [01;35m[K^~~~[m[K
+[2.549s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:18:36:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[2.549s]    18 |         acc_max = (option.acc_max!=[01;35m[KNULL[m[K) ? option.acc_max : acc_max;   //最大加速度 mm/s^2 用线速度表示
+[2.549s]       |                                    [01;35m[K^~~~[m[K
+[2.549s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:19:46:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[2.549s]    19 |         jert_acc_max = (option.jert_acc_max!=[01;35m[KNULL[m[K) ? option.jert_acc_max : jert_acc_max;  //最大加加速或减加速  mm/s^3
+[2.550s]       |                                              [01;35m[K^~~~[m[K
+[2.550s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:20:36:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[2.550s]    20 |         dcc_max = (option.dcc_max!=[01;35m[KNULL[m[K) ? option.dcc_max : dcc_max;   //最大减速度 mm/s^2  用线速度表示
+[2.550s]       |                                    [01;35m[K^~~~[m[K
+[2.550s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:21:46:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[2.550s]    21 |         jert_dcc_max = (option.jert_dcc_max!=[01;35m[KNULL[m[K) ? option.jert_dcc_max : jert_dcc_max;  //最大减减速或加减速 mm/s^3
+[2.550s]       |                                              [01;35m[K^~~~[m[K
+[2.550s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:22:56:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[2.550s]    22 |         followError_speed = (option.followError_speed!=[01;35m[KNULL[m[K) ? option.followError_speed : followError_speed; //跟随误差
+[2.550s]       |                                                        [01;35m[K^~~~[m[K
+[2.550s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:23:40:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[2.550s]    23 |         sync_time = (option.sync_time!=[01;35m[KNULL[m[K) ? option.sync_time : sync_time;                   //同步周期时间 单位 秒s
+[2.550s]       |                                        [01;35m[K^~~~[m[K
+[2.554s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:[m[K In member function ‘[01m[Kint zy_motor_controller::sync_control()[m[K’:
+[2.554s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:333:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvel_pre[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[2.554s]   333 |                     float [01;35m[Kvel_pre[m[K = 0.0f;  //速度预计算值
+[2.554s]       |                           [01;35m[K^~~~~~~[m[K
+[2.554s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:[m[K In member function ‘[01m[Kint motor_controller::vel_s_curve(float*, float*)[m[K’:
+[2.554s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:119:17:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+[2.554s]   119 |                 [01;35m[Kif[m[K(abs(vel_spans[i]) > abs(span_max))
+[2.555s]       |                 [01;35m[K^~[m[K
+[2.555s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:121:21:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+[2.555s]   121 |                     [01;36m[Kspan_max[m[K = vel_spans[i];  //更新为当前值
+[2.555s]       |                     [01;36m[K^~~~~~~~[m[K
+[3.276s] In file included from [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:1[m[K:
+[3.277s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:[m[K At global scope:
+[3.277s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:45:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_run_task[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.277s]    45 | static U32 [01;35m[Kg_run_task[m[K = 1;
+[3.277s]       |            [01;35m[K^~~~~~~~~~[m[K
+[3.375s] In file included from [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/node_motor_controller.cpp:6[m[K:
+[3.375s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:171:17:[m[K [01;35m[Kwarning: [m[K‘[01m[K__servos[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.375s]   171 | static servos_t [01;35m[K__servos[m[K[NUM_SERVOS] = {0};
+[3.375s]       |                 [01;35m[K^~~~~~~~[m[K
+[3.375s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:121:26:[m[K [01;35m[Kwarning: [m[K‘[01m[K__pi_config[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.375s]   121 | static pi_offset_config  [01;35m[K__pi_config[m[K[] =
+[3.375s]       |                          [01;35m[K^~~~~~~~~~~[m[K
+[3.376s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:45:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_run_task[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.376s]    45 | static U32 [01;35m[Kg_run_task[m[K = 1;
+[3.376s]       |            [01;35m[K^~~~~~~~~~[m[K
+[3.376s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:44:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_op_mode[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.376s]    44 | static U32 [01;35m[Kg_op_mode[m[K = OP_MODE_CSP;
+[3.376s]       |            [01;35m[K^~~~~~~~~[m[K
+[3.731s] [100%] [32m[1mLinking CXX executable node_motor_controller[0m
+[3.855s] [100%] Built target node_motor_controller
+[3.864s] Invoked command in '/home/st/ecat_motion_ws/build/ecat_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/st/ecat_motion_ws/build/ecat_motion -- -j12 -l12
+[3.873s] Invoking command in '/home/st/ecat_motion_ws/build/ecat_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/st/ecat_motion_ws/build/ecat_motion
+[3.879s] -- Install configuration: "debug"
+[3.879s] -- Installing: /home/st/ecat_motion_ws/install/ecat_motion/lib/ecat_motion/node_motor_controller
+[3.881s] -- Set runtime path of "/home/st/ecat_motion_ws/install/ecat_motion/lib/ecat_motion/node_motor_controller" to ""
+[3.881s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/lib/ecat_motion/hcfa_D3E_1602_1A02_ENI.xml
+[3.881s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/lib/libpci_zecm.so
+[3.881s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ament_index/resource_index/package_run_dependencies/ecat_motion
+[3.881s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ament_index/resource_index/parent_prefix_path/ecat_motion
+[3.881s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/ament_prefix_path.sh
+[3.881s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/ament_prefix_path.dsv
+[3.881s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/path.sh
+[3.882s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/path.dsv
+[3.882s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.bash
+[3.882s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.sh
+[3.882s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.zsh
+[3.882s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.dsv
+[3.882s] -- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/package.dsv
+[3.882s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ament_index/resource_index/packages/ecat_motion
+[3.882s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/cmake/ecat_motionConfig.cmake
+[3.882s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/cmake/ecat_motionConfig-version.cmake
+[3.882s] -- Up-to-date: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/package.xml
+[3.884s] Invoked command in '/home/st/ecat_motion_ws/build/ecat_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/st/ecat_motion_ws/build/ecat_motion

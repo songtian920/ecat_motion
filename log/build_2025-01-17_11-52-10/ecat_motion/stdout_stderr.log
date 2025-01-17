@@ -1,0 +1,78 @@
+[35m[1mConsolidate compiler generated dependencies of target node_motor_controller[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o[0m
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:[m[K In member function ‘[01m[Kint motor_controller::vel_s_curve(float*, float**)[m[K’:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:119:17:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+  119 |                 [01;35m[Kif[m[K(abs(vel_spans[i]) > abs(span_max))
+      |                 [01;35m[K^~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:121:21:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  121 |                     [01;36m[Kspan_max[m[K = vel_spans[i];  //更新为当前值
+      |                     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:242:81:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat*[m[K’ in assignment
+  242 |                         vel_out[i] = [01;31m[K0.5*jert_acc_real[i]*(t-t_aa_s)*(t-t_aa_s) + vel_init_0[i][m[K;  // 加速时域速度曲线
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+      |                                                                                 [01;31m[K|[m[K
+      |                                                                                 [01;31m[Kdouble[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:249:82:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat*[m[K’ in assignment
+  248 |                         vel_out[i] = [01;31m[Kjert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_da_s)-0.5*jert_acc_max*(t-t_da_s)*(t-t_da_s) +[m[K
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  249 | [01;31m[K                            0.5*jert_acc_real[i]*(t_aa_e-t_aa_s)*(t_aa_e-t_aa_s) + vel_init_0[i][m[K;
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+      |                                                                                  [01;31m[K|[m[K
+      |                                                                                  [01;31m[Kdouble[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:264:81:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat*[m[K’ in assignment
+  264 |                         vel_out[i] = [01;31m[K0.5*jert_acc_real[i]*(t-t_aa_s)*(t-t_aa_s) + vel_init_0[i][m[K;  // 加速时域速度曲线
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+      |                                                                                 [01;31m[K|[m[K
+      |                                                                                 [01;31m[Kdouble[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:271:82:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat*[m[K’ in assignment
+  270 |                         vel_out[i] = [01;31m[Kjert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_a_s) +[m[K
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+  271 | [01;31m[K                            0.5*jert_acc_real[i]*(t_aa_e-t_aa_s)*(t_aa_e-t_aa_s) + vel_init_0[i][m[K;
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+      |                                                                                  [01;31m[K|[m[K
+      |                                                                                  [01;31m[Kdouble[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:278:115:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat*[m[K’ in assignment
+  277 |    vel_out[i] = [01;31m[K-0.5*jert_acc_real[i]*(t-t_da_s)*(t-t_da_s) + jert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_da_s)+[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+  278 | [01;31m[K       jert_acc_real[i]*(t_a_e-t_a_s) + 0.5*jert_acc_real[i]*(t_aa_e-t_aa_s)*(t_aa_e-t_aa_s) + vel_init_0[i][m[K;
+      |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+      |                                                                                              [01;31m[K|[m[K
+      |                                                                                              [01;31m[Kdouble[m[K
+
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:297:81:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat*[m[K’ in assignment
+  297 |                         vel_out[i] = [01;31m[K0.5*jert_dcc_real[i]*(t-t_ad_s)*(t-t_ad_s) + vel_init_0[i][m[K;  // 加速时域速度曲线
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+      |                                                                                 [01;31m[K|[m[K
+      |                                                                                 [01;31m[Kdouble[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:304:82:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat*[m[K’ in assignment
+  303 |                         vel_out[i] = [01;31m[Kjert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_dd_s)-0.5*jert_dcc_max*(t-t_dd_s)*(t-t_dd_s) +[m[K
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+  304 | [01;31m[K                            0.5*jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t_ad_e-t_ad_s) + vel_init_0[i][m[K;
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+      |                                                                                  [01;31m[K|[m[K
+      |                                                                                  [01;31m[Kdouble[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:319:81:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat*[m[K’ in assignment
+  319 |                         vel_out[i] = [01;31m[K0.5*jert_dcc_real[i]*(t-t_ad_s)*(t-t_ad_s) + vel_init_0[i][m[K;  // 减速时域速度曲线
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+      |                                                                                 [01;31m[K|[m[K
+      |                                                                                 [01;31m[Kdouble[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:326:82:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat*[m[K’ in assignment
+  325 |                         vel_out[i] = [01;31m[Kjert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_d_s) +[m[K
+      |                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K 
+  326 | [01;31m[K                            0.5*jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t_ad_e-t_ad_s) + vel_init_0[i][m[K;
+      |                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+      |                                                                                  [01;31m[K|[m[K
+      |                                                                                  [01;31m[Kdouble[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:333:115:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat*[m[K’ in assignment
+  332 |    vel_out[i] = [01;31m[K-0.5*jert_dcc_real[i]*(t-t_dd_s)*(t-t_dd_s) + jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_dd_s)+[m[K
+      |                 [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+  333 | [01;31m[K       jert_dcc_real[i]*(t_d_e-t_d_s) + 0.5*jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t_ad_e-t_ad_s) + vel_init_0[i][m[K;
+      |        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+      |                                                                                              [01;31m[K|[m[K
+      |                                                                                              [01;31m[Kdouble[m[K
+
+gmake[2]: *** [CMakeFiles/node_motor_controller.dir/build.make:104: CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/node_motor_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

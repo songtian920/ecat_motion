@@ -1,0 +1,24 @@
+[35m[1mConsolidate compiler generated dependencies of target node_motor_controller[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable node_motor_controller[0m
+[100%] Built target node_motor_controller
+-- Install configuration: "debug"
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/lib/ecat_motion/node_motor_controller
+-- Set runtime path of "/home/st/ecat_motion_ws/install/ecat_motion/lib/ecat_motion/node_motor_controller" to ""
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/lib/ecat_motion/hcfa_D3E_1602_1A02_ENI.xml
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/lib/libpci_zecm.so
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ament_index/resource_index/package_run_dependencies/ecat_motion
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ament_index/resource_index/parent_prefix_path/ecat_motion
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/ament_prefix_path.sh
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/ament_prefix_path.dsv
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/path.sh
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/path.dsv
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.bash
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.sh
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.zsh
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.dsv
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/package.dsv
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ament_index/resource_index/packages/ecat_motion
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/cmake/ecat_motionConfig.cmake
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/cmake/ecat_motionConfig-version.cmake
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/package.xml

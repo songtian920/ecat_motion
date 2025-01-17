@@ -1,0 +1,54 @@
+[0.012s] Invoking command in '/home/st/ecat_motion_ws/build/ecat_motion': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/st/ecat_motion_ws/build/ecat_motion -- -j12 -l12
+[0.057s] [35m[1mConsolidate compiler generated dependencies of target node_motor_controller[0m
+[0.082s] [ 25%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o[0m
+[2.438s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:[m[K In member function ‘[01m[Kint motor_controller::vel_s_curve(float*, float*)[m[K’:
+[2.438s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:121:17:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+[2.438s]   121 |                 [01;35m[Kif[m[K(abs(vel_spans[i]) > abs(span_max))
+[2.438s]       |                 [01;35m[K^~[m[K
+[2.438s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:123:21:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+[2.438s]   123 |                     [01;36m[Kspan_max[m[K = vel_spans[i];  //更新为当前值
+[2.438s]       |                     [01;36m[K^~~~~~~~[m[K
+[2.438s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:256:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+[2.438s]   256 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+[2.438s]       |                                                                                [01;31m[K^[m[K
+[2.439s]       |                                                                                [32m[K;[m[K
+[2.439s]   257 |                         [32m[Kreturn[m[K -1;
+[2.439s]       |                         [32m[K~~~~~~[m[K                                                  
+[2.444s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:272:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+[2.444s]   272 |                         [01;31m[Kvle_out[m[K[i] = jert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_a_s) +
+[2.444s]       |                         [01;31m[K^~~~~~~[m[K
+[2.445s]       |                         [32m[Kvel_out[m[K
+[2.451s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:279:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+[2.451s]   279 |                         [01;31m[Kvle_out[m[K[i] = -0.5*jert_acc_real[i]*(t-t_da_s)*(t-t_da_s) + jert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_da_s)+
+[2.452s]       |                         [01;31m[K^~~~~~~[m[K
+[2.452s]       |                         [32m[Kvel_out[m[K
+[2.452s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:285:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+[2.452s]   285 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+[2.452s]       |                                                                                [01;31m[K^[m[K
+[2.452s]       |                                                                                [32m[K;[m[K
+[2.452s]   286 |                         [32m[Kreturn[m[K -1;
+[2.452s]       |                         [32m[K~~~~~~[m[K                                                  
+[2.452s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:311:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+[2.452s]   311 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+[2.452s]       |                                                                                [01;31m[K^[m[K
+[2.453s]       |                                                                                [32m[K;[m[K
+[2.453s]   312 |                         [32m[Kreturn[m[K -1;
+[2.453s]       |                         [32m[K~~~~~~[m[K                                                  
+[2.456s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:327:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+[2.456s]   327 |                         [01;31m[Kvle_out[m[K[i] = jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_d_s) +
+[2.456s]       |                         [01;31m[K^~~~~~~[m[K
+[2.456s]       |                         [32m[Kvel_out[m[K
+[2.460s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:334:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+[2.460s]   334 |                         [01;31m[Kvle_out[m[K[i] = -0.5*jert_dcc_real[i]*(t-t_dd_s)*(t-t_dd_s) + jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_dd_s)+
+[2.460s]       |                         [01;31m[K^~~~~~~[m[K
+[2.460s]       |                         [32m[Kvel_out[m[K
+[2.460s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:340:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+[2.460s]   340 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+[2.460s]       |                                                                                [01;31m[K^[m[K
+[2.460s]       |                                                                                [32m[K;[m[K
+[2.461s]   341 |                         [32m[Kreturn[m[K -1;
+[2.461s]       |                         [32m[K~~~~~~[m[K                                                  
+[3.163s] gmake[2]: *** [CMakeFiles/node_motor_controller.dir/build.make:104: CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o] Error 1
+[3.163s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/node_motor_controller.dir/all] Error 2
+[3.163s] gmake: *** [Makefile:146: all] Error 2
+[3.166s] Invoked command in '/home/st/ecat_motion_ws/build/ecat_motion' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/st/ecat_motion_ws/build/ecat_motion -- -j12 -l12

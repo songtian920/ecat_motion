@@ -1,0 +1,31 @@
+[35m[1mConsolidate compiler generated dependencies of target node_motor_controller[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o[0m
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:[m[K In member function ‘[01m[Kint motor_controller::vel_s_curve(float*, float*)[m[K’:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:121:17:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+  121 |                 [01;35m[Kif[m[K(abs(vel_spans[i]) > abs(span_max))
+      |                 [01;35m[K^~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:123:21:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  123 |                     [01;36m[Kspan_max[m[K = vel_spans[i];  //更新为当前值
+      |                     [01;36m[K^~~~~~~~[m[K
+[ 50%] [32m[1mLinking CXX executable node_motor_controller[0m
+[100%] Built target node_motor_controller
+-- Install configuration: "debug"
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/lib/ecat_motion/node_motor_controller
+-- Set runtime path of "/home/st/ecat_motion_ws/install/ecat_motion/lib/ecat_motion/node_motor_controller" to ""
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/lib/ecat_motion/hcfa_D3E_1602_1A02_ENI.xml
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/lib/libpci_zecm.so
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ament_index/resource_index/package_run_dependencies/ecat_motion
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ament_index/resource_index/parent_prefix_path/ecat_motion
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/ament_prefix_path.sh
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/ament_prefix_path.dsv
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/path.sh
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/environment/path.dsv
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.bash
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.sh
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.zsh
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/local_setup.dsv
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/package.dsv
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ament_index/resource_index/packages/ecat_motion
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/cmake/ecat_motionConfig.cmake
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/cmake/ecat_motionConfig-version.cmake
+-- Installing: /home/st/ecat_motion_ws/install/ecat_motion/share/ecat_motion/package.xml

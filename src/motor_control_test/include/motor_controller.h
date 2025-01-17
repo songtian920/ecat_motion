@@ -48,7 +48,7 @@ class motor_controller : public rclcpp::Node
     int sync_control();
 
     //计算s型速度曲线
-    int vel_s_curve(float vel_current[],float vel_out[]);
+    int vel_s_curve(float *vel_current,float *vel_out);
     
     protected:
 

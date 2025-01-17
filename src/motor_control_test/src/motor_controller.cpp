@@ -82,7 +82,7 @@ bool motor_controller::speed_safety(float vel_target,float cmd_v_last,
 }
 
 //计算s型速度曲线 vel_current需要给当前的命令值，不要读取当前轴速，有波动会导致震颤
-int motor_controller::vel_s_curve(float vel_current[],float vel_out[])
+int motor_controller::vel_s_curve(float *vel_current,float  *vel_out)
 {   
     float vel_spans[servo_num];  //各轴速度差跨度       
     int span_max_axis = -1; //速度差最大的轴编号
@@ -93,8 +93,6 @@ int motor_controller::vel_s_curve(float vel_current[],float vel_out[])
         //同步时间计数清零，用于取时间戳计算，单位1ms
         //当重新计算曲线时，将时间计数清零
         time_count=0;  
-
-        
 
         //判读速度是否在保护值范围,并找出速度变化跨度最大的轴
         for(int i=0;i < servo_num ;i++)
@@ -204,6 +202,8 @@ int motor_controller::vel_s_curve(float vel_current[],float vel_out[])
                 time_span_s_curve = t_dd_e;  //最大时间跨度
             }
         }
+        //计算完成后 清空速度更新标志位
+        vel_cmd_update = false;
     }
 
     //四轴同步，则根具各轴速度差比例求出各轴 加加速度，及减减速度
@@ -253,7 +253,7 @@ int motor_controller::vel_s_curve(float vel_current[],float vel_out[])
                     else
                     {
                         //错误
-                        printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+                        printf("%s\n","时间未在分段时域内，检查时域分段计算值");
                         return -1;
                     }
                 }
@@ -269,20 +269,20 @@ int motor_controller::vel_s_curve(float vel_current[],float vel_out[])
                     {
                         //匀加速阶段
                         float t = (float)time_count/1000.0f;  // 单位 s
-                        vle_out[i] = jert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_a_s) + 
+                        vel_out[i] = jert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_a_s) + 
                             0.5*jert_acc_real[i]*(t_aa_e-t_aa_s)*(t_aa_e-t_aa_s) + vel_init_0[i];
                     }
                     else if(time_count > t_da_s && time_count <= t_da_e)
                     {
                         //减加速阶段
                         float t = (float)time_count/1000.0f;  // 单位 s
-                        vle_out[i] = -0.5*jert_acc_real[i]*(t-t_da_s)*(t-t_da_s) + jert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_da_s)+
+                        vel_out[i] = -0.5*jert_acc_real[i]*(t-t_da_s)*(t-t_da_s) + jert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_da_s)+
                             jert_acc_real[i]*(t_a_e-t_a_s) + 0.5*jert_acc_real[i]*(t_aa_e-t_aa_s)*(t_aa_e-t_aa_s) + vel_init_0[i];
                     }
                     else
                     {
                         //错误
-                        printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+                        printf("%s\n","时间未在分段时域内，检查时域分段计算值");
                         return -1;
                     }
                 }
@@ -308,7 +308,7 @@ int motor_controller::vel_s_curve(float vel_current[],float vel_out[])
                     else
                     {
                         //错误
-                        printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+                        printf("%s\n","时间未在分段时域内，检查时域分段计算值");
                         return -1;
                     }
                 }
@@ -324,20 +324,20 @@ int motor_controller::vel_s_curve(float vel_current[],float vel_out[])
                     {
                         //匀加速阶段
                         float t = (float)time_count/1000.0f;  // 单位 s
-                        vle_out[i] = jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_d_s) + 
+                        vel_out[i] = jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_d_s) + 
                             0.5*jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t_ad_e-t_ad_s) + vel_init_0[i];
                     }
                     else if(time_count > t_dd_s && time_count <= t_dd_e)
                     {
                         //减加速阶段
                         float t = (float)time_count/1000.0f;  // 单位 s
-                        vle_out[i] = -0.5*jert_dcc_real[i]*(t-t_dd_s)*(t-t_dd_s) + jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_dd_s)+
+                        vel_out[i] = -0.5*jert_dcc_real[i]*(t-t_dd_s)*(t-t_dd_s) + jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_dd_s)+
                             jert_dcc_real[i]*(t_d_e-t_d_s) + 0.5*jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t_ad_e-t_ad_s) + vel_init_0[i];
                     }
                     else
                     {
                         //错误
-                        printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+                        printf("%s\n","时间未在分段时域内，检查时域分段计算值");
                         return -1;
                     }
                 }

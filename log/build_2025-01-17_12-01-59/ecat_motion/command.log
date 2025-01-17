@@ -1,0 +1,4 @@
+Invoking command in '/home/st/ecat_motion_ws/build/ecat_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/st/ecat_motion_ws/build/ecat_motion -- -j12 -l12
+Invoked command in '/home/st/ecat_motion_ws/build/ecat_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/st/ecat_motion_ws/build/ecat_motion -- -j12 -l12
+Invoking command in '/home/st/ecat_motion_ws/build/ecat_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/st/ecat_motion_ws/build/ecat_motion
+Invoked command in '/home/st/ecat_motion_ws/build/ecat_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/st/ecat_motion_ws/build/ecat_motion

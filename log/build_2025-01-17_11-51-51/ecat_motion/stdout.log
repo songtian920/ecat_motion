@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target node_motor_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/zy_motor_controller.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/node_motor_controller.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o[0m

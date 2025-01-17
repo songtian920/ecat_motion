@@ -1,0 +1,50 @@
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:[m[K In member function ‘[01m[Kint motor_controller::vel_s_curve(float*, float*)[m[K’:
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:121:17:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+  121 |                 [01;35m[Kif[m[K(abs(vel_spans[i]) > abs(span_max))
+      |                 [01;35m[K^~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:123:21:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  123 |                     [01;36m[Kspan_max[m[K = vel_spans[i];  //更新为当前值
+      |                     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:256:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+  256 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+      |                                                                                [01;31m[K^[m[K
+      |                                                                                [32m[K;[m[K
+  257 |                         [32m[Kreturn[m[K -1;
+      |                         [32m[K~~~~~~[m[K                                                  
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:272:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+  272 |                         [01;31m[Kvle_out[m[K[i] = jert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_a_s) +
+      |                         [01;31m[K^~~~~~~[m[K
+      |                         [32m[Kvel_out[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:279:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+  279 |                         [01;31m[Kvle_out[m[K[i] = -0.5*jert_acc_real[i]*(t-t_da_s)*(t-t_da_s) + jert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_da_s)+
+      |                         [01;31m[K^~~~~~~[m[K
+      |                         [32m[Kvel_out[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:285:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+  285 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+      |                                                                                [01;31m[K^[m[K
+      |                                                                                [32m[K;[m[K
+  286 |                         [32m[Kreturn[m[K -1;
+      |                         [32m[K~~~~~~[m[K                                                  
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:311:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+  311 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+      |                                                                                [01;31m[K^[m[K
+      |                                                                                [32m[K;[m[K
+  312 |                         [32m[Kreturn[m[K -1;
+      |                         [32m[K~~~~~~[m[K                                                  
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:327:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+  327 |                         [01;31m[Kvle_out[m[K[i] = jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_d_s) +
+      |                         [01;31m[K^~~~~~~[m[K
+      |                         [32m[Kvel_out[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:334:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+  334 |                         [01;31m[Kvle_out[m[K[i] = -0.5*jert_dcc_real[i]*(t-t_dd_s)*(t-t_dd_s) + jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_dd_s)+
+      |                         [01;31m[K^~~~~~~[m[K
+      |                         [32m[Kvel_out[m[K
+[01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:340:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+  340 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+      |                                                                                [01;31m[K^[m[K
+      |                                                                                [32m[K;[m[K
+  341 |                         [32m[Kreturn[m[K -1;
+      |                         [32m[K~~~~~~[m[K                                                  
+gmake[2]: *** [CMakeFiles/node_motor_controller.dir/build.make:104: CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/node_motor_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -292,11 +292,14 @@ int zy_motor_controller::sync_control()
             time_span_s_curve = 0; //曲线存活的有效时间跨度
             motion_start_state = false;  //运动开始状态返回
         }
-        else
+        //处于控制状态
+        if(motion_start_ctrl && run[0] && run[1])
         {
-            motion_start_state = true;  //运动开始状态返回
+            motion_start_state = true;  //运动开始状态返回, 运动状态返回后，用户再赋值命令，防止被清空
+            this->vel_s_curve(vel_target_last,vel_target);
         }
 
+        
         //第四步 如果是每个轴是run且运动标志start状态，则遍历每个轴，将第三步计算的目标值，赋给ecat输出映像
         //todo测试用两个轴，后续换四个轴
         if(run[0] && run[1])
@@ -398,13 +401,16 @@ int zy_motor_controller::sync_control()
                             *pi->servos[i].v,vel_max,sync_time);  
                     if(safe_speed)
                     {
+                        
                         servo->cmd_v = vel_target[i]; 
                         servo->out_v= (U32)servo->cmd_v;  //速度指令输出
+                        //更新上一次 的命令速度
+                        vel_target_last[i] = vel_target[i];
                     }
                     else
                     {
-                        //todo 速度不安全，命令速度改为0， 减速停止，并报警，注：急刹有风险，只有急停有急刹
-
+                        //todo 给刹车命令控制字
+                        _quick_stop = true;
                     }
                     
                 }
