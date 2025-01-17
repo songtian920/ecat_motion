@@ -1,0 +1,80 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+		    // name 参数就是debug界面的选择名称
+            "name": "Launch",
+            // 此处若为c++的xmllaunch文件要写成ros，若是python写成的launch文件则填python
+            "type": "ros",
+            "request": "launch",
+            //target 指向launch文件的绝对路径
+            "target": "/home/st/ywfBot_ws/install/moveit2_ywf_interface/share/moveit2_ywf_interface/launch/start_ywfMoveit_intf.launch.py",
+            // "console": "integratedTerminal",
+        },
+        {
+            "name": "Ros Node debug", 
+            "type": "cppdbg",
+            "request": "launch",
+            //改成自己的要编译的文件
+            //"program": "/home/st/ecat_motion_ws/install/ecat_motion/lib/ecat_motion/sync_control1601_test",
+            "program": "/home/st/ecat_motion_ws/install/ecat_motion/lib/ecat_motion/node_motor_controller",
+            
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Ros testNode debug", 
+            "type": "cppdbg",
+            "request": "launch",
+            //改成自己的要编译的文件
+            "program": "/home/st/ywfBot_ws/install/moveit2_ywf_interface/lib/moveit2_ywf_interface/test_moveit2",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "ROS2 Python: 当前文件",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/home/st/ywfBot_ws/src/user_func_implement/user_func_implement/user_func_main.py",
+            "env": {
+                "PYTHONPATH": "/home/st/ywfBot_ws/install/user_func_implement/lib/python3.10/site-packages:/home/st/ywfBot_ws/install/py_action_client/lib/python3.10/site-packages:/home/st/ywfBot_ws/install/py_action/lib/python3.10/site-packages:/home/st/ywfBot_ws/install/moveit_ywf_msg/local/lib/python3.10/dist-packages:/home/st/ros2_controls_source_ws/install/test_msgs/local/lib/python3.10/dist-packages:/home/st/ros2_controls_source_ws/install/statistics_msgs/local/lib/python3.10/dist-packages:/home/st/ros2_controls_source_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:/home/st/ros2_controls_source_ws/install/rqt_controller_manager/lib/python3.10/site-packages:/home/st/ros2_controls_source_ws/install/rosgraph_msgs/local/lib/python3.10/dist-packages:/home/st/ros2_controls_source_ws/install/ros2controlcli/lib/python3.10/site-packages:/home/st/ros2_controls_source_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/home/st/ros2_controls_source_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/st/ros2_controls_source_ws/install/ros2_control_demo_testing/lib/python3.10/site-packages:/home/st/ros2_controls_source_ws/install/composition_interfaces/local/lib/python3.10/dist-packages:/home/st/ros2_controls_source_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/st/ros2_controls_source_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/home/st/ros2_controls_source_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages:/home/st/ros2_controls_source_ws/install/control_msgs/local/lib/python3.10/dist-packages:/home/st/ros2_controls_source_ws/install/action_msgs/local/lib/python3.10/dist-packages:/home/st/ros2_controls_source_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:/home/st/moveit2_humble_ws/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/home/st/moveit2_humble_ws/install/moveit_configs_utils/lib/python3.10/site-packages:/home/st/moveit2_humble_ws/install/srdfdom/local/lib/python3.10/dist-packages:/home/st/moveit2_humble_ws/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/home/st/moveit2_humble_ws/install/launch_param_builder/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+                "ROS_DOMAIN_ID": "0"
+            },
+            "args": [],
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+source;share/ecat_motion/local_setup.bash
+source;share/ecat_motion/local_setup.dsv
+source;share/ecat_motion/local_setup.ps1
+source;share/ecat_motion/local_setup.sh
+source;share/ecat_motion/local_setup.zsh

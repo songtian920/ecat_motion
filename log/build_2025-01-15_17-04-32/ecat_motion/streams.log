@@ -1,0 +1,152 @@
+[0.010s] Invoking command in '/home/st/ecat_motion_ws/build/ecat_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/st/ecat_motion_ws/src/motor_control_test -DCMAKE_INSTALL_PREFIX=/home/st/ecat_motion_ws/install/ecat_motion
+[0.224s] -- The C compiler identification is GNU 11.4.0
+[0.287s] -- The CXX compiler identification is GNU 11.4.0
+[0.309s] -- Detecting C compiler ABI info
+[0.389s] -- Detecting C compiler ABI info - done
+[0.398s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.399s] -- Detecting C compile features
+[0.400s] -- Detecting C compile features - done
+[0.407s] -- Detecting CXX compiler ABI info
+[0.495s] -- Detecting CXX compiler ABI info - done
+[0.509s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.510s] -- Detecting CXX compile features
+[0.510s] -- Detecting CXX compile features - done
+[0.515s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.668s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.761s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.807s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.813s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.823s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.838s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.857s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.906s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.911s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.007s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.032s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.069s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.079s] -- Looking for pthread.h
+[1.156s] -- Looking for pthread.h - found
+[1.157s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.238s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.239s] -- Found Threads: TRUE  
+[1.309s] -- Found rclcpp_action: 16.0.11 (/opt/ros/humble/share/rclcpp_action/cmake)
+[1.350s] -- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.442s] -- Configuring done
+[1.460s] -- Generating done
+[1.467s] -- Build files have been written to: /home/st/ecat_motion_ws/build/ecat_motion
+[1.479s] Invoked command in '/home/st/ecat_motion_ws/build/ecat_motion' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/st/ecat_motion_ws/src/motor_control_test -DCMAKE_INSTALL_PREFIX=/home/st/ecat_motion_ws/install/ecat_motion
+[1.481s] Invoking command in '/home/st/ecat_motion_ws/build/ecat_motion': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/st/ecat_motion_ws/build/ecat_motion -- -j12 -l12
+[1.529s] [ 75%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/node_motor_controller.cpp.o[0m
+[1.530s] [ 75%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/zy_motor_controller.cpp.o[0m
+[1.530s] [ 75%] [32mBuilding CXX object CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o[0m
+[3.826s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:[m[K In member function ‘[01m[Kint motor_controller::vel_s_curve(float*, float*)[m[K’:
+[3.826s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:92:14:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Ktime_count[m[K’ in ‘[01m[K(motor_controller*)this[m[K’, which is of pointer type ‘[01m[Kmotor_controller*[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+[3.827s]    92 |         this.[01;31m[Ktime_count[m[K=0;
+[3.827s]       |              [01;31m[K^~~~~~~~~~[m[K
+[3.827s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:120:17:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+[3.827s]   120 |                 [01;35m[Kif[m[K(abs(vel_spans[i]) > abs(span_max))
+[3.827s]       |                 [01;35m[K^~[m[K
+[3.827s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:122:21:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+[3.827s]   122 |                     [01;36m[Kspan_max[m[K = vel_spans[i];  //更新为当前值
+[3.827s]       |                     [01;36m[K^~~~~~~~[m[K
+[3.835s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:211:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kspan_max_axis[m[K’ was not declared in this scope
+[3.835s]   211 |         if(i!= [01;31m[Kspan_max_axis[m[K)  //当前不是找到速度差最大轴
+[3.835s]       |                [01;31m[K^~~~~~~~~~~~~[m[K
+[3.839s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:214:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_spans[m[K’ was not declared in this scope
+[3.840s]   214 |             jert_acc_real[i] = (abs([01;31m[Kvel_spans[m[K[i])/abs(span_max))*jert_acc_max;
+[3.840s]       |                                     [01;31m[K^~~~~~~~~[m[K
+[3.847s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:214:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kspan_max[m[K’ was not declared in this scope
+[3.847s]   214 |             jert_acc_real[i] = (abs(vel_spans[i])/abs([01;31m[Kspan_max[m[K))*jert_acc_max;
+[3.847s]       |                                                       [01;31m[K^~~~~~~~[m[K
+[3.852s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:234:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_spans[m[K’ was not declared in this scope
+[3.853s]   234 |             if([01;31m[Kvel_spans[m[K[i] > 0)   //加速阶段
+[3.853s]       |                [01;31m[K^~~~~~~~~[m[K
+[3.853s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:255:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+[3.853s]   255 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+[3.853s]       |                                                                                [01;31m[K^[m[K
+[3.853s]       |                                                                                [32m[K;[m[K
+[3.853s]   256 |                         [32m[Kreturn[m[K -1;
+[3.853s]       |                         [32m[K~~~~~~[m[K                                                  
+[3.858s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:271:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+[3.858s]   271 |                         [01;31m[Kvle_out[m[K[i] = jert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_a_s) +
+[3.858s]       |                         [01;31m[K^~~~~~~[m[K
+[3.858s]       |                         [32m[Kvel_out[m[K
+[3.862s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:278:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+[3.862s]   278 |                         [01;31m[Kvle_out[m[K[i] = -0.5*jert_acc_real[i]*(t-t_da_s)*(t-t_da_s) + jert_acc_real[i]*(t_aa_e-t_aa_s)*(t-t_da_s)+
+[3.862s]       |                         [01;31m[K^~~~~~~[m[K
+[3.862s]       |                         [32m[Kvel_out[m[K
+[3.862s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:284:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+[3.863s]   284 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+[3.863s]       |                                                                                [01;31m[K^[m[K
+[3.863s]       |                                                                                [32m[K;[m[K
+[3.863s]   285 |                         [32m[Kreturn[m[K -1;
+[3.863s]       |                         [32m[K~~~~~~[m[K                                                  
+[3.863s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:310:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+[3.863s]   310 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+[3.863s]       |                                                                                [01;31m[K^[m[K
+[3.863s]       |                                                                                [32m[K;[m[K
+[3.863s]   311 |                         [32m[Kreturn[m[K -1;
+[3.863s]       |                         [32m[K~~~~~~[m[K                                                  
+[3.868s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:326:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+[3.868s]   326 |                         [01;31m[Kvle_out[m[K[i] = jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_d_s) +
+[3.868s]       |                         [01;31m[K^~~~~~~[m[K
+[3.868s]       |                         [32m[Kvel_out[m[K
+[3.872s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:333:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvle_out[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_out[m[K’?
+[3.872s]   333 |                         [01;31m[Kvle_out[m[K[i] = -0.5*jert_dcc_real[i]*(t-t_dd_s)*(t-t_dd_s) + jert_dcc_real[i]*(t_ad_e-t_ad_s)*(t-t_dd_s)+
+[3.872s]       |                         [01;31m[K^~~~~~~[m[K
+[3.872s]       |                         [32m[Kvel_out[m[K
+[3.872s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/motor_controller.cpp:339:80:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+[3.873s]   339 |                         printf("%s\n","时间未在分段时域内，检查时域分段计算值")
+[3.873s]       |                                                                                [01;31m[K^[m[K
+[3.873s]       |                                                                                [32m[K;[m[K
+[3.873s]   340 |                         [32m[Kreturn[m[K -1;
+[3.873s]       |                         [32m[K~~~~~~[m[K                                                  
+[3.874s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:[m[K In constructor ‘[01m[Kzy_motor_controller::zy_motor_controller(int16_t, int16_t, std::string, OptionParam, rclcpp::NodeOptions)[m[K’:
+[3.874s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:17:36:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[3.874s]    17 |         vel_max = (option.vel_max!=[01;35m[KNULL[m[K) ? option.vel_max : vel_max;   //最大速度
+[3.874s]       |                                    [01;35m[K^~~~[m[K
+[3.874s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:18:36:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[3.874s]    18 |         acc_max = (option.acc_max!=[01;35m[KNULL[m[K) ? option.acc_max : acc_max;   //最大加速度 mm/s^2 用线速度表示
+[3.874s]       |                                    [01;35m[K^~~~[m[K
+[3.875s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:19:46:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[3.875s]    19 |         jert_acc_max = (option.jert_acc_max!=[01;35m[KNULL[m[K) ? option.jert_acc_max : jert_acc_max;  //最大加加速或减加速  mm/s^3
+[3.875s]       |                                              [01;35m[K^~~~[m[K
+[3.875s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:20:36:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[3.875s]    20 |         dcc_max = (option.dcc_max!=[01;35m[KNULL[m[K) ? option.dcc_max : dcc_max;   //最大减速度 mm/s^2  用线速度表示
+[3.875s]       |                                    [01;35m[K^~~~[m[K
+[3.875s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:21:46:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[3.875s]    21 |         jert_dcc_max = (option.jert_dcc_max!=[01;35m[KNULL[m[K) ? option.jert_dcc_max : jert_dcc_max;  //最大减减速或加减速 mm/s^3
+[3.875s]       |                                              [01;35m[K^~~~[m[K
+[3.875s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:22:56:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[3.875s]    22 |         followError_speed = (option.followError_speed!=[01;35m[KNULL[m[K) ? option.followError_speed : followError_speed; //跟随误差
+[3.876s]       |                                                        [01;35m[K^~~~[m[K
+[3.876s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:23:40:[m[K [01;35m[Kwarning: [m[KNULL used in arithmetic [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wpointer-arith-Wpointer-arith]8;;[m[K]
+[3.876s]    23 |         sync_time = (option.sync_time!=[01;35m[KNULL[m[K) ? option.sync_time : sync_time;                   //同步周期时间 单位 秒s
+[3.876s]       |                                        [01;35m[K^~~~[m[K
+[3.879s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:[m[K In member function ‘[01m[Kint zy_motor_controller::sync_control()[m[K’:
+[3.879s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:329:27:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kvel_pre[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.879s]   329 |                     float [01;35m[Kvel_pre[m[K = 0.0f;  //速度预计算值
+[3.879s]       |                           [01;35m[K^~~~~~~[m[K
+[4.550s] gmake[2]: *** [CMakeFiles/node_motor_controller.dir/build.make:104: CMakeFiles/node_motor_controller.dir/src/motor_controller.cpp.o] Error 1
+[4.550s] gmake[2]: *** Waiting for unfinished jobs....
+[4.564s] In file included from [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/node_motor_controller.cpp:6[m[K:
+[4.564s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:171:17:[m[K [01;35m[Kwarning: [m[K‘[01m[K__servos[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.564s]   171 | static servos_t [01;35m[K__servos[m[K[NUM_SERVOS] = {0};
+[4.564s]       |                 [01;35m[K^~~~~~~~[m[K
+[4.564s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:121:26:[m[K [01;35m[Kwarning: [m[K‘[01m[K__pi_config[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.564s]   121 | static pi_offset_config  [01;35m[K__pi_config[m[K[] =
+[4.564s]       |                          [01;35m[K^~~~~~~~~~~[m[K
+[4.564s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:45:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_run_task[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.565s]    45 | static U32 [01;35m[Kg_run_task[m[K = 1;
+[4.565s]       |            [01;35m[K^~~~~~~~~~[m[K
+[4.565s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:44:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_op_mode[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.565s]    44 | static U32 [01;35m[Kg_op_mode[m[K = OP_MODE_CSP;
+[4.565s]       |            [01;35m[K^~~~~~~~~[m[K
+[4.575s] In file included from [01m[K/home/st/ecat_motion_ws/src/motor_control_test/src/zy_motor_controller.cpp:1[m[K:
+[4.576s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:[m[K At global scope:
+[4.576s] [01m[K/home/st/ecat_motion_ws/src/motor_control_test/include/zy_motor_controller.h:45:12:[m[K [01;35m[Kwarning: [m[K‘[01m[Kg_run_task[m[K’ defined but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.576s]    45 | static U32 [01;35m[Kg_run_task[m[K = 1;
+[4.576s]       |            [01;35m[K^~~~~~~~~~[m[K
+[4.901s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/node_motor_controller.dir/all] Error 2
+[4.901s] gmake: *** [Makefile:146: all] Error 2
+[4.904s] Invoked command in '/home/st/ecat_motion_ws/build/ecat_motion' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/st/ecat_motion_ws/build/ecat_motion -- -j12 -l12
